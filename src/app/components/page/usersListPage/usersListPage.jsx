@@ -79,7 +79,6 @@ const UsersListPage = () => {
             [sortBy.order]
         );
         const usersCrop = paginate(sortedUsers, currentPage, pageSize);
-        console.log(usersCrop);
         const clearFilter = () => {
             setSelectedProf();
         };

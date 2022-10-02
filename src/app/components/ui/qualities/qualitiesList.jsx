@@ -8,7 +8,6 @@ const QualitiesList = ({ id }) => {
     const qual = getQualities(id);
     if (!isLoading) {
         return qual.map((q) => {
-            console.log("q", q);
             return <Quality key={q._id} quality={q} />;
         });
     } else return "Loading...";
